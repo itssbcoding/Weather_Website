@@ -1,5 +1,3 @@
-console.log('Client Side javascript file is loaded.')
-
 const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne=document.querySelector('#message-1')//for chosing a html attribute by id, we use #
