@@ -16,7 +16,7 @@ const forecast = (latittude,longitude,callback)=>{
             callback(body.error.message,undefined)
         }
         else{
-            callback(undefined,'The weather condition is '+body.current.condition.text+' and Current temperature is '+body.current.temp_c+'°C')
+            callback(undefined,'The weather condition is '+body.current.condition.text+' and Current temperature is '+body.current.temp_c+'°C',body.current.condition.icon)
         }
     })
 }

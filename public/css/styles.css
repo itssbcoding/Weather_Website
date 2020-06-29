@@ -33,14 +33,6 @@ header a{
     text-decoration: none;
 }
 
-.image{
-    width: 250px;
-}
-
-.main-content{
-    flex-grow: 1;
-}
-
 input{
     border: 1px solid #cccccc;
     padding: 8px;
@@ -52,4 +44,17 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+.image{
+    width: 250px;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+.icon{
+    padding: 5px;
+    margin-top: 15px;
 }
