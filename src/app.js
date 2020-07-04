@@ -40,7 +40,7 @@ app.get('/help',(req,res)=>{
         name:'Shubham'
     })
 })
-
+//we send the values to this fn using /js/app.js script
 app.get('/weather',(req,res)=>{
     const address=req.query.address
     if(!address)
@@ -74,7 +74,7 @@ app.get('/weather',(req,res)=>{
     })
 })
 
-app.get('/help/*', (req,res)=>{
+app.get('/help/*', (req,res)=>{ //to set error page in the help section
     res.render('404',{
         title:'Help',
         message:'Help Article Not Found',
@@ -82,7 +82,7 @@ app.get('/help/*', (req,res)=>{
     })
 })
 
-app.get('*',(req,res)=>{
+app.get('*',(req,res)=>{ //to set error page after none of the above matching fn executes
     res.render('404', {
         title:'404',
         message:'Page not Found!',

@@ -13,8 +13,8 @@ weatherForm.addEventListener('submit',(event)=>{ //executes when an event occurs
 
     const location = search.value
 
-    fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{
-        response.json().then((data)=>{
+    fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{//still doubts, study
+        response.json().then((data)=>{//still doubts, study
             if(data.error){
                 messageOne.textContent=data.error
             }
